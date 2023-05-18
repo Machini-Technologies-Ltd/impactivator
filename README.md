@@ -18,11 +18,11 @@ Make sure you have the following software installed on your machine:
 
 1. Clone the repository to your local machine using the following command:
 
-       git clone https://github.com/your-username/react-vite-app.git
+       git clone https://github.com/Machini-Technologies-Ltd/impactivator.git
 
 ## 2. Navigate to the project directory:
 
-      cd react-vite-app
+      cd impactivator
 
 
 ## 3. Frontend Setup

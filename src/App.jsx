@@ -1,28 +1,31 @@
-import React from "react";
-import Navbar from "./components/core/Navbar";
-import Banner from "./components/core/Banner";
-import Impact from "./components/core/Impact";
-import About from "./components/core/About";
-import FindOutMore from "./components/core/FindOutMore";
-import ExplainerVideo from "./components/ExplainerVideo";
-import Roadmap from "./components/core/Roadmap";
-import Footer from "./components/core/Footer";
-import Press from "./components/core/Press";
-import ImpactStatsFooter from "./components/core/ImpactStatsFooter";
-
-export default function App() {
+import "./App.css";
+import Banner from "./assets/Pov/banner.jpg";
+import Imapact from "./components/Imapact";
+import Nfts from "./assets/Pov/2.jpg";
+import Info from "./assets/Pov/3.jpg";
+import LoginScreen from "./components/LoginScreen";
+function App() {
   return (
-    <div>
-      <Navbar />
-      <Banner />
-      <Impact />
-      <About />
-      <FindOutMore />
-      <ExplainerVideo />
-      <Press />
-      <Roadmap />
-      <ImpactStatsFooter />
-      <Footer />
-    </div>
+    <>
+      <div className="w-[100%]">
+        <img
+          src={Banner}
+          alt=""
+          className="bg-center bg-cover md:h-1/2 md:w-full"
+        />
+
+        {/* <img
+          src={Nfts}
+          className="w-full h-auto object-cover"
+          alt=""
+          srcset=""
+        /> */}
+      </div>
+      {/* <Imapact /> */}
+      {/* <img src={Info} alt="" srcset="" /> */}
+      {/* <LoginScreen /> */}
+    </>
   );
 }
+
+export default App;

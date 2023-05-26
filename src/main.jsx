@@ -11,6 +11,10 @@ import ImpactorSignUp from "./pages/ImpactorSignUp";
 import HeroSignUp from "./pages/HeroSignUp";
 import AvatarCreator from "./components/AvatarCreator";
 import MarketPlace from "./pages/MarketPlace";
+import MyHero from "./pages/MyHero";
+import Heroes from "./pages/Heroes";
+import Projects from "./pages/Projects";
+import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
   {
@@ -34,11 +38,23 @@ const router = createBrowserRouter([
     element: <AvatarCreator />,
   },
   {
+    path: "/hero",
+    element: <MyHero />,
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
+  },
+  {
+    path: "/heroes",
+    element: <Heroes />,
+  },
+  {
     path: "/marketplace",
     element: <MarketPlace />,
   },
   {
-    path: "/impactor/login",
+    path: "/impactor/dashboard",
     element: <ImpactorLoginScreen />,
   },
   {
@@ -47,6 +63,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/impactor/signup",
+    element: <ImpactorSignUp />,
+  },
+  {
+    path: "/create/mint",
     element: <ImpactorSignUp />,
   },
 ]);

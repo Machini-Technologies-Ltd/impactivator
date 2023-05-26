@@ -4,9 +4,11 @@ import Imapact from "./components/Imapact";
 import Nfts from "./assets/Pov/2.jpg";
 import Info from "./assets/Pov/3.jpg";
 import LoginScreen from "./components/LoginScreen";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
+      <Navbar />
       <div className="w-[100%]">
         <img
           src={Banner}

@@ -1,16 +1,19 @@
 import React from "react";
+import Project from "../components/Project";
+import Avatar from "../components/Avatar";
 import Navbar from "../components/Navbar";
 
-export default function Task() {
+export default function MyHero() {
   return (
     <>
       <Navbar />
-      <div className="bg-[#071506eb] h-screen">
-        <h1 className="text-center text-white text-3xl py-2">Your Tasks</h1>
+      <div className="bg-[#071506eb] h-full">
+        <h1 className="text-center text-white text-3xl py-2 ">Your Hero</h1>
 
         <div className="flex flex-col ">
           <div className="flex flex-col md:space-x-16">
-            <div className="flex flex-row space-x-4 items-center">
+            <div className="flex flex-row space-x-4 items-center md:space-x-16">
+              <Avatar />
               <button className="my-4 mx-2 px-4 py-2 border rounded bg-[aqua]">
                 Task 1
               </button>
@@ -53,6 +56,12 @@ export default function Task() {
           <button className="mx-2 bg-[#413d5b] px-4 py-2 rounded text-white">
             Wallet
           </button>
+        </div>
+
+        <div>
+          <h1 className="text-3xl text-white my-10 mx-3">My Projects</h1>
+          <Project />
+          <Project />
         </div>
       </div>
     </>

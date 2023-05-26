@@ -60,12 +60,12 @@ export default function Navbar() {
           >
             Nft's
           </Link>
-          <a
-            href="#"
+          <Link
+            to="/courses"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
           >
-            Community
-          </a>
+            Courses
+          </Link>
         </div>
         <div>
           <button className="inline-flex items-center bg-[#000] border-0 py-2 px-4 text-white mt-4 md:mt-0">

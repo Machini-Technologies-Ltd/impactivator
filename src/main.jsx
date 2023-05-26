@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import HeroLoginScreen from "./pages/HeroLoginScreen";
+import Courses from "./pages/Courses";
 import ImpactorLoginScreen from "./pages/ImpactorLoginScreen";
 import Progress from "./pages/Progress";
 import Task from "./pages/Task";
@@ -15,6 +15,7 @@ import MyHero from "./pages/MyHero";
 import Heroes from "./pages/Heroes";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
+import CreateMint from "./pages/CreateMint";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/hero/login",
-    element: <HeroLoginScreen />,
+    path: "/courses",
+    element: <Courses />,
   },
   {
     path: "/hero/signup",
@@ -67,7 +68,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/create/mint",
-    element: <ImpactorSignUp />,
+    element: <CreateMint />,
   },
 ]);
 

@@ -2,8 +2,10 @@ import React from "react";
 import Project from "../components/Project";
 import Avatar from "../components/Avatar";
 import Navbar from "../components/Navbar";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function MyHero() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -14,7 +16,10 @@ export default function MyHero() {
           <div className="flex flex-col md:space-x-16">
             <div className="flex flex-row space-x-4 items-center md:space-x-16">
               <Avatar />
-              <button className="my-4 mx-2 px-4 py-2 border rounded bg-[aqua]">
+              <button
+                onClick={() => navigate("/task")}
+                className="my-4 mx-2 px-4 py-2 border rounded bg-[aqua]"
+              >
                 Task 1
               </button>
               <div class="w-12 h-12 rounded-full flex-shrink-0 bg-gray-300 relative">

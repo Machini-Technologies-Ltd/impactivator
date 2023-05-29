@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import GetStartedOptions from "./GetStartedOptions";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6 bg-slate-800 text-white pb-4">
+    <nav className="  flex items-center justify-between flex-wrap p-6 bg-slate-800 text-white">
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
         <h1 className="text-[#fff] cursor-pointer">
           <Link to={"/"}>Impactivator</Link>
@@ -69,11 +70,7 @@ export default function Navbar() {
             Courses
           </Link>
         </div>
-        <div>
-          <button className="inline-flex items-center bg-[#000] border-0 py-2 px-4 text-white mt-4 md:mt-0">
-            Get Started
-          </button>
-        </div>
+        <GetStartedOptions />
       </div>
     </nav>
   );

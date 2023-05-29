@@ -24,7 +24,12 @@ export default function ImpactorLoginScreen() {
             <button className="border px-4 py-2 " onClick={navigateToHero}>
               Heroes
             </button>
-            <button className="border px-4 py-2 ">Country Manager</button>
+            <button
+              className="border px-4 py-2 "
+              onClick={() => navigate("/country-manager")}
+            >
+              Country Manager
+            </button>
           </div>
 
           <div className="flex flex-col mx-4 my-10 md:flex-row md:space-x-16">

@@ -63,8 +63,11 @@ const AvatarCreator = () => {
   };
 
   return (
-    <div className="bg-[#071506] h-full flex justify-center flex-col">
-      <button onClick={displayIframe} className=" mb-3 w-40 ml-3 px-8 border">
+    <div className="bg-[#071506] h-full flex justify-center flex-col relative">
+      <button
+        onClick={displayIframe}
+        className=" mb-3 w-40 ml-3 px-8 border absolute top-20"
+      >
         Choose Avatar
       </button>
       {/* <p id="avatarUrl">Avatar URL:</p> */}

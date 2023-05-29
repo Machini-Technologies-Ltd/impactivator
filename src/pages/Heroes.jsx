@@ -7,7 +7,7 @@ export default function Heroes() {
     <>
       <Navbar />
       <div className="bg-[#071506] h-full">
-        <h1 className="px-4 py-4 text-white text-3xl">My Heroes</h1>
+        <h1 className="px-4 py-4 text-white text-3xl ">Heroes Sponsored</h1>
         <div className=" flex flex-col space-y-4 mx-4 items-center md:grid grid-cols-3 ">
           <Hero />
           <Hero />

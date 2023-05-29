@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaInfoCircle, FaStar } from "react-icons/fa";
+import NftDetail from "./NftDetail";
 import HeroAvatar from "../assets/Pov/Hero.png";
 export default function Hero() {
   const [showDetails, setShowDetails] = useState(false);
@@ -14,7 +15,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="cursor-pointer bg-white py-4 px-6 rounded md:w-3/4 flex flex-col justify-center shadow">
+    <div className="bg-white py-4 px-6 rounded md:w-3/4 flex flex-col justify-center shadow">
       <div className="flex items-center justify-between md:mb-3">
         <button className="text-red-500" onClick={toggleFavorite}>
           <FaStar className={isFavorited ? "text-red-500" : "text-gray-500"} />
@@ -29,9 +30,7 @@ export default function Hero() {
       </div>
       <img src={HeroAvatar} alt="" srcSet="" className="h-64 rounded" />
 
-      {showDetails && (
-        <div className="mt-4">{/* Include the NFT details here */}</div>
-      )}
+      {showDetails && <NftDetail toggleDetails={toggleDetails} />}
     </div>
   );
 }

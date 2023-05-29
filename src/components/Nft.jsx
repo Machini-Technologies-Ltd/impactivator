@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaInfoCircle, FaStar } from "react-icons/fa";
-
+import NftDetail from "./NftDetail";
+import Avatar from "../assets/Pov/Hero.png";
 export default function Nft() {
   const [showDetails, setShowDetails] = useState(false);
   const [isFavorited, setIsFavorited] = useState(false);
@@ -27,16 +28,9 @@ export default function Nft() {
           {/* {showDetails ? "Hide Details" : "Show Details"} */}
         </button>
       </div>
-      <img
-        src="https://img.freepik.com/free-vector/hand-drawn-nft-style-ape-illustration_23-2149622021.jpg?w=2000"
-        alt=""
-        srcSet=""
-        className="h-64 rounded"
-      />
+      <img src={Avatar} alt="" srcSet="" className="h-64 rounded" />
 
-      {showDetails && (
-        <div className="mt-4">{/* Include the NFT details here */}</div>
-      )}
+      {showDetails && <NftDetail toggleDetails={toggleDetails} />}
     </div>
   );
 }

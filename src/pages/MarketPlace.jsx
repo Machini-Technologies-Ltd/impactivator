@@ -10,7 +10,7 @@ export default function MarketPlace() {
         <h1 className="text-center text-white py-3 capitalize text-4xl">
           Nft Marketplace
         </h1>
-        <div className="flex flex-col space-y-4 mx-4 items-center sm:grid-cols-2 grid lg:grid-cols-3 ">
+        <div className="flex flex-col space-y-4 mx-4 md:ml-28 items-center sm:grid-cols-2 md:grid lg:grid-cols-3 ">
           <Nft />
           <Nft />
           <Nft />

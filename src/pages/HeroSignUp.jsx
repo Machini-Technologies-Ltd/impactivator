@@ -1,8 +1,10 @@
 import React from "react";
 import AvatarCreator from "../components/AvatarCreator";
 import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
 
 export default function HeroSignUp() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -62,7 +64,10 @@ export default function HeroSignUp() {
                   <span>privacy policy</span> <input type="checkbox" />
                 </p>
 
-                <button className=" mx-2 bg-[#413d5b] px-4 py-2 rounded text-white">
+                <button
+                  onClick={() => navigate("/hero")}
+                  className=" mx-2 bg-[#413d5b] px-4 py-2 rounded text-white"
+                >
                   submit
                 </button>
               </div>

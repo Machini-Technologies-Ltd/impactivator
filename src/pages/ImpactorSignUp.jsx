@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import { useNavigate } from "react-router-dom";
 
 export default function ImpactorSignUp() {
+  const navigate = useNavigate();
   return (
     <>
       <Navbar />
@@ -60,7 +62,10 @@ export default function ImpactorSignUp() {
                 <span>privacy policy</span> <input type="checkbox" />
               </p>
 
-              <button className=" mx-2 bg-[#413d5b] px-4 py-2 rounded text-white">
+              <button
+                onClick={() => navigate("/impactor/dashboard")}
+                className=" mx-2 bg-[#413d5b] px-4 py-2 rounded text-white"
+              >
                 submit
               </button>
             </div>

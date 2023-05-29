@@ -7,7 +7,9 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between flex-wrap p-6 bg-slate-800 text-white pb-4">
       <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-        <h1 className="text-[#fff]">Impactivator</h1>
+        <h1 className="text-[#fff] cursor-pointer">
+          <Link to={"/"}>Impactivator</Link>
+        </h1>
       </div>
       <div className="block lg:hidden">
         <button
@@ -36,12 +38,12 @@ export default function Navbar() {
         }`}
       >
         <div className="text-sm lg:flex-grow">
-          <a
-            href="#"
+          <Link
+            to="/"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"
           >
             Home
-          </a>
+          </Link>
           <a
             href="#"
             className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4"

@@ -8,24 +8,26 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="w-[100%]">
-        <img
-          src={Banner}
-          alt=""
-          className="bg-center bg-cover md:h-1/2 md:w-full"
-        />
+      <div className="overflow-hidden h-screen">
+        <Navbar />
+        <div>
+          <img
+            src={Banner}
+            alt=""
+            className="bg-center pb-2 bg-cover md:h-1/2 md:w-full"
+          />
 
-        {/* <img
+          {/* <img
           src={Nfts}
           className="w-full h-auto object-cover"
           alt=""
           srcset=""
         /> */}
+        </div>
+        {/* <Imapact /> */}
+        {/* <img src={Info} alt="" srcset="" /> */}
+        {/* <LoginScreen /> */}
       </div>
-      {/* <Imapact /> */}
-      {/* <img src={Info} alt="" srcset="" /> */}
-      {/* <LoginScreen /> */}
     </>
   );
 }

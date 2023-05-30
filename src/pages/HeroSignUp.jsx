@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import AvatarCreator from "../components/AvatarCreator";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 export default function HeroSignUp() {
   const navigate = useNavigate();
+  const [initiatives, setInitiatives] = useState("");
+  const [project, setProject] = useState("");
+  const [sdgs, setSdgs] = useState("");
   return (
     <>
       <Navbar />
@@ -19,7 +22,9 @@ export default function HeroSignUp() {
               </label>
               <input
                 type="text"
-                className=" border px-4 py-2 rounded mt-2 md:w-1/2"
+                value={initiatives}
+                onChange={(e) => setInitiatives(e.target.value)}
+                className=" border text-[#000] px-4 py-2 rounded mt-2 md:w-1/2"
               />
             </div>
             <div className="relative ">
@@ -28,7 +33,9 @@ export default function HeroSignUp() {
               </label>
               <input
                 type="text"
-                className=" border px-4 py-2 rounded mt-2  md:w-1/2  "
+                value={project}
+                onChange={(e) => setProject(e.target.value)}
+                className=" border px-4 py-2 rounded mt-2  md:w-1/2 text-[#000] "
               />
             </div>
             <div className="relative">
@@ -37,7 +44,9 @@ export default function HeroSignUp() {
               </label>
               <input
                 type="text"
-                className="border px-4 py-2 rounded mt-2  md:w-1/2"
+                value={sdgs}
+                onChange={(e) => setSdgs(e.target.value)}
+                className="border px-4 text-[#000] py-2 rounded mt-2  md:w-1/2"
               />
             </div>
 

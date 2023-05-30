@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 
 export default function ImpactorSignUp() {
   const navigate = useNavigate();
+
+  const [initiatives, setInitiatives] = useState("");
+  const [project, setProject] = useState("");
+  const [sdgs, setSdgs] = useState("");
   return (
     <>
       <Navbar />
@@ -17,7 +21,9 @@ export default function ImpactorSignUp() {
             </label>
             <input
               type="text"
-              className=" border px-4 py-2 rounded mt-2 md:w-1/2"
+              value={initiatives}
+              onChange={(e) => setInitiatives(e.target.value)}
+              className="text-[#000] border px-4 py-2 rounded mt-2 md:w-1/2"
             />
           </div>
           <div className="relative ">
@@ -26,7 +32,9 @@ export default function ImpactorSignUp() {
             </label>
             <input
               type="text"
-              className=" border px-4 py-2 rounded mt-2  md:w-1/2  "
+              value={project}
+              onChange={(e) => setProject(e.target.value)}
+              className=" text-[#000] border px-4 py-2 rounded mt-2  md:w-1/2  "
             />
           </div>
           <div className="relative">
@@ -35,7 +43,9 @@ export default function ImpactorSignUp() {
             </label>
             <input
               type="text"
-              className="border px-4 py-2 rounded mt-2  md:w-1/2"
+              value={sdgs}
+              onChange={(e) => setSdgs(e.target.value)}
+              className="border text-[#000] px-4 py-2 rounded mt-2  md:w-1/2"
             />
           </div>
 

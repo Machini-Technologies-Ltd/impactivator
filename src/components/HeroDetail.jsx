@@ -1,6 +1,8 @@
 import React from "react";
 import HeroAvatar from "../assets/Pov/Hero.png";
-export default function NftDetail({ toggleDetails }) {
+import { useNavigate } from "react-router-dom";
+export default function HeroDetail({ toggleDetails }) {
+  const navigate = useNavigate();
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
       <div className="bg-white p-6 rounded-lg">
@@ -26,29 +28,34 @@ export default function NftDetail({ toggleDetails }) {
           </button>
         </div>
         <h1 className="text-2xl mb-4 text-center border-b-2 pb-3">
-          Nft Details
+          Hero Details
         </h1>
         <img src={HeroAvatar} alt="" srcSet="" className="h-64 rounded" />
         <div>
-          <h2 className="text-xl font-medium">NFT Name</h2>
-          <p className="text-gray-600">Example NFT Name</p>
+          <h2 className="text-xl font-medium">Name</h2>
+          <p className="text-gray-600">Joseph Muchene</p>
         </div>
         <div className="mt-2">
-          <h2 className="text-xl font-medium">Description</h2>
-          <p className="text-gray-600">Example NFT Description</p>
+          <h2 className="text-xl font-medium">Ideal Esg Project</h2>
+          <p className="text-gray-600">Sustainable Communities Initiative</p>
         </div>
         <div className="mt-2">
-          <h2 className="text-xl font-medium">Owner</h2>
-          <p className="text-gray-600">Example Owner</p>
+          <h2 className="text-xl font-medium">Country</h2>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Nigeria_%28state%29.svg/1920px-Flag_of_Nigeria_%28state%29.svg.png"
+            alt=""
+            srcset=""
+            className="rounded-full w-20 h-8"
+          />
         </div>
 
         <div>
           <div className="mt-6">
             <button
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-              //   onClick={handleBuyNFT}
+              onClick={() => navigate("/hero")}
             >
-              Buy NFT
+              Show Details
             </button>
           </div>
         </div>

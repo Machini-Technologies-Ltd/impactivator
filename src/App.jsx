@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./components/Banner";
 import Benefits from "./components/Benefits";
+import Footer from "./components/Footer";
 import KickStart from "./components/KickStart";
 import Media from "./components/Media";
 
@@ -15,6 +16,7 @@ function App() {
         <KickStart />
         <Benefits />
         <Media />
+        {/* <Footer /> */}
       </div>
     </>
   );

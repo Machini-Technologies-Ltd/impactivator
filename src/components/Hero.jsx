@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaInfoCircle, FaStar } from "react-icons/fa";
-import NftDetail from "./NftDetail";
 import HeroAvatar from "../assets/Pov/Hero.png";
+import HeroDetail from "./HeroDetail";
 export default function Hero() {
   const [showDetails, setShowDetails] = useState(false);
   const [isFavorited, setIsFavorited] = useState(false);
@@ -30,7 +30,7 @@ export default function Hero() {
       </div>
       <img src={HeroAvatar} alt="" srcSet="" className="h-64 rounded" />
 
-      {showDetails && <NftDetail toggleDetails={toggleDetails} />}
+      {showDetails && <HeroDetail toggleDetails={toggleDetails} />}
     </div>
   );
 }

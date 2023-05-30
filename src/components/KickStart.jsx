@@ -1,4 +1,5 @@
 import React from "react";
+import GetStartedOptions from "./GetStartedOptions";
 
 export default function KickStart() {
   return (
@@ -12,6 +13,7 @@ export default function KickStart() {
           20% of transactions will be paid to mpowa impact to run the training
           academy and operate the marketplace.
         </p>
+        <GetStartedOptions textBlack={true} />
       </div>
     </div>
   );
